@@ -1,0 +1,67 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".ParentSettings" >
+
+    <EditText
+        android:id="@+id/NewCode"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignParentTop="true"
+        android:hint="@string/code"
+        android:layout_toRightOf="@+id/CodeText">
+    </EditText>
+
+    <TextView
+        android:id="@+id/CodeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:textSize="17sp"
+        android:layout_alignBottom="@+id/NewCode"
+        android:text="@string/newCode" />
+    
+    <EditText
+        android:id="@+id/TimerSet"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_alignBottom="@+id/TimerText"
+        android:hint="@string/time"
+        android:layout_toRightOf="@+id/TimerText">
+    </EditText>
+
+    <Button
+        android:id="@+id/SaveButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:text="@string/save" />
+
+    <TextView
+        android:id="@+id/TimerText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/CodeText"
+        android:layout_below="@+id/NewCode"
+        android:textSize="17sp"
+        android:layout_marginTop="40dp"
+        android:text="@string/timerAmount" />
+
+    <Switch
+        android:id="@+id/Switch"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/TimerText"
+        android:layout_marginTop="40dp"
+        android:text="@string/TurnOO" />
+
+
+</RelativeLayout>
